@@ -3,20 +3,22 @@
     padding: 0;
     font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
     color: #717170;
+    font-weight: 200;
 }
 a {
     text-decoration: none;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 10%;
 }
-
-.intro img {
-    width: 250px;
-    height: auto;
+.intro, .contact, .resume{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10%;
 }
 
 ::selection {
@@ -33,26 +35,28 @@ li {
     right: 0;
 }
 
-.nav {
+header {
     display: flex;
     flex-wrap: wrap;
     float: right;
-    margin: 20px;
+    margin-top: 20px;
     margin-right: 5%;
 }
 
 .nav img {
+    display: flex;
+    flex-wrap: wrap;
     width: 40px;
     height: auto;
-    margin: 0 5px;
+    margin: 0px 5px;
     opacity: 80%;
 }
 
 .about, .skills, .project {
     display: flex;
     flex-wrap: wrap;
-    margin: 80px auto;
-    margin-left: 30%;
+    flex-direction: column;
+    margin: auto auto 200px 30%;
 }
 
 .contact, .resume {
@@ -65,16 +69,118 @@ li {
 h3 a, h3 a {
     font-size: 3rem;
 }
+.intro {
+    max-width: 100%;
+}
 
 .intro span{
     font-size: 3rem;
-
-    position: relative;
-    margin-top: 200px;
+    max-width: 90%;
+    margin: 250px 0;
+    font-weight: 200;
 }
 
 .contact-me {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.contact-me img {
+    width: 70px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact-me input[type=text],.contact-me input[type=email],.contact-me textarea {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding:10px;
+    margin:30px 0;
+    border: 2px thin #717170;
+    min-width: 30%;
+    width: 400px;
+    position: relative;
+}
+
+#emoji, #emoji2 {
+    display: inline-flex;
+}
+
+h2 {
+    text-decoration: underline;
+    text-decoration-color: #007AFE;
+}
+
+footer {
+    margin: 200px auto 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=submit] {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding:10px;
+    margin:30px 0;
+    min-width: 10%;
+    width: 100px;
+    border: 1px thin #717170;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.imessage-green {
+    display: flex;
+    background-color: #35C759;
+    opacity: 0.7;
+    width: 500px;
+    border-radius: 10px;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.imessage-blue {
+    display: flex;
+    background-color: #007AFE;
+    opacity: 0.7;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-left: 200px;
+    vertical-align: top;
+    position: relative;
+    height: auto;
+}
+
+.contact {
+    font-weight: 500;
+    margin: auto auto 300px 10%;
+}
+
+.imessage-blue span, .imessage-blue ul{
+    z-index: 1;
+}
+.imessage-blue img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 150px;
+    height: auto;
+    z-index: 1;
 }
