@@ -32,7 +32,9 @@
     <div class="container about">
         <h2>ABOUT ME</h2>
             <div class="imessage-blue">
-                <img src="img/hello.png">
+                <div id="profile-sticker">
+                    <img src="img/hello.png">
+                </div>
                 <span>I'm a Front-end focused Web Developer having fun developing and designing beautiful websites. I recently graduated from the University of British Columbia with the Bachelor of Arts in Cognitive Systems. 
                     I have always loved coding and I discovered my interest in web development upon the graduation of university. I decided to learn and pursue my dreams as a web developer ever since. In my free time, I </span> 
             </div>
@@ -40,24 +42,26 @@
     <div class="container skills">
         <h2>SKILLS</h2>
         <div class="imessage-blue">
-            <ul>
-                <li>JS</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React</li>
-                <li>SQL</li>
-                <li>Ruby</li>
-                <li>Rails</li>
-            </ul>
+                <ul>
+                    <li>JS</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React</li>
+                    <li>SQL</li>
+                    <li>Ruby</li>
+                    <li>Rails</li>
+                </ul>
         </div>
     </div>
     <div class="container project">
         <h2>PROJECTS</h2>
         <div class="imessage-blue">
-            <a href=""><img src=""></a>
-            <a href=""><img src=""></a>
-            <a href=""><img src=""></a>
-            <a href=""><img src=""></a>
+            <div id="project-img">
+                <a href=""  id="project1"><img src="img/todo.png"></a><span>FDSLJFLKDSAJFLJDLSJF</span>
+                <a href=""  id="project2"><img src="img/agnes.png"></a><span>FDSLJFLKDSAJFLJDLSJF</span>
+                <a href=""><img src="" id="project3"></a>
+                <a href=""><img src="" id="project4"></a>
+            </div>
         </div>
     </div>
     <div class="container resume">
@@ -72,3 +76,16 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+
+<!--modal section -->
+
+<div id="modal-window-one" class="click-to-open">
+    <div class="modal-content">
+        <div class="close">+</div>
+    </div>
+</div>
+<div id="modal-window-two" class="click-to-open">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+    </div>
+</div>
