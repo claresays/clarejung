@@ -16,16 +16,36 @@ emojis2.forEach(emoji => emoji.addEventListener('mouseout', function(e){
     emoji.classList.remove('animated','bounce')
 }))
 
-var btn = document.getElementsByClassName("click-to-open");
+var modals = document.getElementsByClassName("modal");
+var btns = document.getElementsByClassName("btn");
+var spanes = document.getElementsByClassName("close");
+var funcs = [];
+ 
+function Modal(num) {
+  return function() {
+    btns[num].onclick =  function() {
+        modals[num].style.display = "block";
+        console.log(num);
+    };
+    spanes[num].onclick = function() {
+        modals[num].style.display = "none";
+    };
+  };
+}
+ 
+for(var i = 0; i < btns.length; i++) {
+  funcs[i] = Modal(i);
+}
+ 
+for(var j = 0; j < btns.length; j++) {
+  funcs[j]();
+}
+ 
+window.onclick = function(event) {
+  if (event.target.className == "modal") {
+      event.target.style.display = "none";
+  }
+};
 
-for (var i = 0; i < btn.length; i++) {
-  var thisBtn = btn[i];
-  thisBtn.addEventListener("click", function(){
-    var modal = document.getElementById(this.dataset.modal);
-    modal.style.display = "flex";
-}, false)};
 
-document.querySelector('.close-button').addEventListener('click',
-function() {
-    document.querySelector('.click-to-open').style.display = 'none';
-});
+const myForm = document.getElementById("myForm");

@@ -32,9 +32,11 @@
     <div class="container about">
         <h2>ABOUT ME</h2>
             <div class="imessage-blue">
+                <!--
                 <div id="profile-sticker">
                     <img src="img/hello.png">
                 </div>
+                -->
                 <span>I'm a Front-end focused Web Developer having fun developing and designing beautiful websites. I recently graduated from the University of British Columbia with the Bachelor of Arts in Cognitive Systems. 
                     I have always loved coding and I discovered my interest in web development upon the graduation of university. I decided to learn and pursue my dreams as a web developer ever since. In my free time, I </span> 
             </div>
@@ -57,16 +59,55 @@
         <h2>PROJECTS</h2>
         <div class="imessage-blue">
             <div id="project-img">
-                <a href=""  id="project1"><img src="img/todo.png"></a><span>FDSLJFLKDSAJFLJDLSJF</span>
-                <a href=""  id="project2"><img src="img/agnes.png"></a><span>FDSLJFLKDSAJFLJDLSJF</span>
-                <a href=""><img src="" id="project3"></a>
-                <a href=""><img src="" id="project4"></a>
+                <img src="img/todo.png" class="btn">
+                <img src="img/agnes.png" class="btn">
+                <img src="" class="btn">
+                <img src="" class="btn">
             </div>
         </div>
     </div>
     <div class="container resume">
         <h3>View My Resume → <a href="resume.pdf">💼</a></h3>
     </div>
+    <!--modal section -->
+    <div class="modal">
+      <!-- First Modal -->
+      <div class="modal-content">
+        <span class="close">&times;</span>                         
+        <p>Productivity App : TODO</p>
+        <video controls>
+            <source src="img/todo_demo.mp4" type="video/mp4"> 
+        </video>
+        <div id="link">
+            <a href="https://github.com/claresays/todo_2020">Link</a>
+            <a href="https://claresays.github.io/todo_2020/">Github</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <!-- Second Modal -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Personal Portfolio</p>
+        <video controls>
+            <source src="img/agnes_demo.mp4" type="video/mp4"> 
+        </video>
+        <div id="link">
+            <a href="https://claresays.github.io/agnes_portfolio/">Link</a>
+            <a href="https://github.com/claresays/agnes_portfolio">Github</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <!-- Third Modal -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Third Modal</p>
+      </div>
+    </div>
+        ​
 
     <footer id="footer">
         <hr>
@@ -77,15 +118,3 @@
 </body>
 </html>
 
-<!--modal section -->
-
-<div id="modal-window-one" class="click-to-open">
-    <div class="modal-content">
-        <div class="close">+</div>
-    </div>
-</div>
-<div id="modal-window-two" class="click-to-open">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-    </div>
-</div>
