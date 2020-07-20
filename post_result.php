@@ -1,9 +1,15 @@
-<!DOCTYPE html>
+<?php
+
+var_dump($_POST);
+?>
+
+<!doctype html>
 <html>
-  <head></head>
+  <head>
+  <meta charset="utf-8">
+  </head>
   <body>
-    Name: <?php echo $_POST["name"]; ?><br>
-    Email: <?php echo $_POST["email"]; ?>
-    Message: <?php echo $_POST["message"]; ?>
+    <h1>Submitted</h1>
+    <p>Your Name is <?php echo $name ?>.</p>
   </body>
 </html>

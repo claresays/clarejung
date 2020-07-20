@@ -48,4 +48,3 @@ window.onclick = function(event) {
 };
 
 
-const myForm = document.getElementById("myForm");

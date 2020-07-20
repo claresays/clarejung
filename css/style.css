@@ -299,7 +299,7 @@ input[type=submit]:hover {
 .modal-content video {
     position: relative;
     border-radius: 0.5rem;
-    max-width: 500px;
+    max-width: 80%;
     height: auto;
     margin: 20px auto;
 }
@@ -313,6 +313,7 @@ input[type=submit]:hover {
 .modal-content p {
     padding: 5px auto;
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .modal-content a{
